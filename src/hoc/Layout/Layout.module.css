@@ -1,5 +1,5 @@
 body {
-  background-image: url(./assets/img/fon-gl.png);
+  background-image: url(../../assets/img/fon-gl.png);
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: repeat;
@@ -8,4 +8,11 @@ body {
   background-clip: border-box;
   image-rendering: -webkit-optimize-contrast;
   min-width: 320px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0 20px;
 }

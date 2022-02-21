@@ -1,0 +1,50 @@
+.likeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 50px;
+  max-width: 90px;
+  height: 35px;
+  background-color: var(--transparentDarkGrey);
+  border-radius: 28px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.likeWrapper::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/img/empty-heart.svg);
+  background-repeat: no-repeat;
+}
+
+.likeWrapper:hover {
+  background-color: rgba(61, 57, 53, 0.35);
+}
+
+.amount {
+  font-family: "Gotham Pro Bold";
+  font-size: 20px;
+  color: var(--darkGrey);
+}
+
+.active.likeWrapper {
+  background-color: var(--transparentGreenColor);
+}
+
+.active.likeWrapper::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/img/full-heart.svg);
+  background-repeat: no-repeat;
+}
+
+.active.likeWrapper:hover {
+  background-color: var(--transparentGreenColor);
+}
+
+.active .amount {
+  color: var(--greenColor);
+}

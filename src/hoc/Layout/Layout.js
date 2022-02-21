@@ -1,15 +1,16 @@
 import Header from "../../components/Header/Header";
+import s from "./Layout.module.css";
 
 const Layout = ({ children }) => {
   return (
-    <div className={s.wrapper}>
-      <Header className={s.header} />
-      <div className={s.body}>{children}</div>
+    <div>
+      <Header />
+      <div className={s.container}>{children}</div>
     </div>
   );
 };
 
-export const withLayout = () => {
+export const withLayout = (Component) => {
   return function withLayoutComponent(props) {
     return (
       <Layout>

@@ -1,0 +1,43 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: auto 350 / 80;
+  cursor: pointer;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.backround {
+  background-color: #fff;
+}
+
+.headerWrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.linksList {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 900px;
+  list-style: none;
+}
+
+.linkItem a {
+  font-family: "Gotham Pro Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--greenColor);
+  text-decoration: none;
+}
+
+.linkItem a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+.backroundImage {
+  background-image: url(../../assets/img/mainBg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+}
+
+.container {
+  height: 700px;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 1150px;
+  height: 215px;
+  margin: 3rem 0;
+}
+
+.slogan {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 100px;
+  font-family: "Gotham Pro Bold";
+  font-weight: 700;
+  background: -webkit-linear-gradient(
+    0deg,
+    #fff,
+    #fdeea9,
+    #fad117,
+    #fdeea9,
+    #fff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
