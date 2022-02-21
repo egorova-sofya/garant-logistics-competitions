@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Gotham Pro Bold";
+  src: url("./assets/fonts/Gotham_Pro_Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Gotham Pro Regular";
+  src: url("./assets/fonts/Gotham_Pro_Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+:root {
+  --greenColor: #007041;
+  --darkGrey: #3d3935;
+  --darkGreyHover: #504944;
+  --coldGrey: #212529;
+  --lightGrey: #6c757d;
+  --white: #f8f9fa;
+  --lightGreen: #e9ecef;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
+html {
+  scroll-behavior: smooth;
+}
+
+.is-invalid {
+  border-color: tomato !important;
+}
+
+.invalid-feedback {
+  color: tomato !important;
+  font-family: "Gotham Pro Bold";
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+.spinner {
+  width: 6em;
+  height: 6em;
+
+  border: 1.1em solid rgba(0, 112, 65, 0.2);
+  border-left: 1.1em solid var(--greenColor);
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+@keyframes load8 {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
