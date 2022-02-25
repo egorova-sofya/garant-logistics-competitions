@@ -1,0 +1,44 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  width: 160px;
+  padding: 5px 10px;
+}
+
+.whiteBtn {
+  border: 3px solid #fff;
+}
+
+.greenBtn {
+  border: 3px solid var(--greenColor);
+}
+
+.svg {
+  width: 30px;
+  height: auto;
+}
+
+.whiteBtn .svg {
+  fill: #fff;
+}
+
+.greenBtn .svg {
+  fill: var(--greenColor);
+}
+
+.btnText {
+  font-family: inherit;
+  font-size: 30px;
+}
+
+.whiteBtn .btnText {
+  color: #fff;
+}
+
+.greenBtn .btnText {
+  color: var(--greenColor);
+}

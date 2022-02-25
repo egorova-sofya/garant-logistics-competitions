@@ -1,5 +1,6 @@
 .backroundImage {
   position: relative;
+  background-color: var(--greenColor);
   background-image: linear-gradient(
       180deg,
       rgba(0, 112, 65, 1) 0%,
@@ -14,6 +15,13 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100%;
+}
+
+.comeInButtonWrapper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 2rem 3rem;
 }
 
 .container {

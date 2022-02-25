@@ -2,11 +2,16 @@ import React from "react";
 import s from "./HomePage.module.css";
 import logo from "../../assets/img/logo.svg";
 import ContestLinks from "../../components/ContestLinks/ContestLinks";
+import ComeInButton from "../../components/ComeInButton/ComeInButton";
 
 const HomePage = () => {
   return (
     <>
       <div className={s.backroundImage}>
+        <div className={s.comeInButtonWrapper}>
+          <ComeInButton theme="white" />
+        </div>
+
         <div className={s.container}>
           <img
             className={s.logo}
