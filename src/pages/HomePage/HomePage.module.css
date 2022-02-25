@@ -1,22 +1,34 @@
 .backroundImage {
-  background-image: url(../../assets/img/mainBg.jpg);
+  position: relative;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 112, 65, 1) 0%,
+      rgba(0, 112, 65, 0.4906337535014006) 15%,
+      rgba(182, 214, 201, 0) 24%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0.2805497198879552) 77%,
+      rgba(255, 255, 255, 0.4738270308123249) 88%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url(../../assets/img/mainBg.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100%;
 }
 
 .container {
-  height: 700px;
+  height: 100vh;
   max-width: 1170px;
   margin: 0 auto;
   margin-bottom: 55px;
   padding: 0 20px;
+  text-align: center;
 }
 
 .logo {
-  width: 1150px;
-  height: 215px;
-  margin: 3rem 0;
+  width: 900px;
+  height: auto;
+  margin: 3rem 0 6rem 0;
 }
 
 .slogan {
@@ -36,4 +48,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 8rem;
+}
+
+.contestLinksWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

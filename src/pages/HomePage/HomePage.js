@@ -14,8 +14,24 @@ const HomePage = () => {
             alt="Логотип компании Гарант Логистика"
           />
           <p className={s.slogan}>Нам 10 лет!</p>
+          <div className={s.contestLinksWrapper}>
+            <ContestLinks
+              title={"Лучшее поздравление"}
+              className={"bestCongratulation"}
+              link={"#"}
+            />
+            <ContestLinks
+              title={"Лучший рисунок"}
+              className={"bestPainting"}
+              link={"#"}
+            />
+            <ContestLinks
+              title={"Очумелые ручки"}
+              className={"bestHandmade"}
+              link={"#"}
+            />
+          </div>
         </div>
-        <ContestLinks title={"Лучшее поздравление"} />
       </div>
     </>
   );
