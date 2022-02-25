@@ -24,7 +24,7 @@
 }
 
 .amount {
-  font-family: "Gotham Pro Bold";
+  font-family: "Gotham Pro Bold", sans-serif;
   font-size: 20px;
   color: var(--darkGrey);
 }

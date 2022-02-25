@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+  font-family: "Gotham Pro Bold", sans-serif;
+  font-size: 50px;
+  line-height: 102px;
+  color: var(--greenColor);
+}
+
+.workPreviewWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 1rem;
+}

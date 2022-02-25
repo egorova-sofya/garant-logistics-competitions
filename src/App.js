@@ -12,7 +12,19 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/registration" element={<RegisterPage />} />
-        <Route path="/works" element={<WorksListPage />} />
+
+        <Route
+          path="/congratulations"
+          element={<WorksListPage title={"Лучшее поздравление"} />}
+        />
+        <Route
+          path="/paintings"
+          element={<WorksListPage title={"Лучший рисунок"} />}
+        />
+        <Route
+          path="/handmade"
+          element={<WorksListPage title={"Очумелые ручки"} />}
+        />
       </Routes>
     </>
   );

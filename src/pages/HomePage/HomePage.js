@@ -18,17 +18,17 @@ const HomePage = () => {
             <ContestLinks
               title={"Лучшее поздравление"}
               className={"bestCongratulation"}
-              link={"#"}
+              link={"/congratulations"}
             />
             <ContestLinks
               title={"Лучший рисунок"}
               className={"bestPainting"}
-              link={"#"}
+              link={"/paintings"}
             />
             <ContestLinks
               title={"Очумелые ручки"}
               className={"bestHandmade"}
-              link={"#"}
+              link={"/handmade"}
             />
           </div>
         </div>
