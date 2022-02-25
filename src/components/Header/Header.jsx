@@ -15,17 +15,19 @@ const Header = () => {
         />
       </Link>
       <div className={s.headerWrapper}>
-        <ul className={s.linksList}>
-          <li className={s.linkItem}>
-            <Link to="/congratulations">Лучшее поздравление</Link>
-          </li>
-          <li className={s.linkItem}>
-            <Link to="/paintings">Лучший рисунок</Link>
-          </li>
-          <li className={s.linkItem}>
-            <Link to="/handmade">Очумелые ручки</Link>
-          </li>
-        </ul>
+        <nav>
+          <ul className={s.linksList}>
+            <li className={s.linkItem}>
+              <Link to="/congratulations">Лучшее поздравление</Link>
+            </li>
+            <li className={s.linkItem}>
+              <Link to="/paintings">Лучший рисунок</Link>
+            </li>
+            <li className={s.linkItem}>
+              <Link to="/handmade">Очумелые ручки</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div className={s.comeInButtonWrapper}>
         <ComeInButton theme="green" />
