@@ -16,13 +16,13 @@ const Header = () => {
         </Link>
         <ul className={s.linksList}>
           <li className={s.linkItem}>
-            <Link to="/">Лучшее поздравление</Link>
+            <Link to="/congratulations">Лучшее поздравление</Link>
           </li>
           <li className={s.linkItem}>
-            <Link to="/">Лучший рисунок</Link>
+            <Link to="/paintings">Лучший рисунок</Link>
           </li>
           <li className={s.linkItem}>
-            <Link to="/">Очумелые ручки</Link>
+            <Link to="/handmade">Очумелые ручки</Link>
           </li>
         </ul>
       </div>
