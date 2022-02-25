@@ -1,0 +1,24 @@
+.container {
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 4rem 3rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Gotham Pro Bold", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--greenColor);
+}
+
+text {
+  font-family: "Arial", sans-serif;
+  line-height: 22px;
+  margin-bottom: 1.5rem;
+}
+
+.contentWrapper {
+  margin-bottom: 1rem;
+}

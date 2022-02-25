@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import WorksListPage from "./pages/WorksListPage/WorksListPage";
+import WorkItemPage from "./pages/WorksListPage/WorkItemPage/WorkItemPage";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           path="/congratulations"
           element={<WorksListPage title={"Лучшее поздравление"} />}
         />
+
+        <Route path="congratulations/:id" element={<WorkItemPage />} />
+
         <Route
           path="/paintings"
           element={<WorksListPage title={"Лучший рисунок"} />}
