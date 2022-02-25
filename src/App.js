@@ -19,8 +19,6 @@ function App() {
           element={<WorksListPage title={"Лучшее поздравление"} />}
         />
 
-        <Route path="congratulations/:id" element={<WorkItemPage />} />
-
         <Route
           path="/paintings"
           element={<WorksListPage title={"Лучший рисунок"} />}
@@ -29,6 +27,10 @@ function App() {
           path="/handmade"
           element={<WorksListPage title={"Очумелые ручки"} />}
         />
+
+        <Route path="congratulations/:id" element={<WorkItemPage />} />
+        <Route path="paintings/:id" element={<WorkItemPage />} />
+        <Route path="handmade/:id" element={<WorkItemPage />} />
       </Routes>
     </>
   );

@@ -3,6 +3,7 @@ import s from "./HomePage.module.css";
 import logo from "../../assets/img/logo.svg";
 import ContestLinks from "../../components/ContestLinks/ContestLinks";
 import ComeInButton from "../../components/ComeInButton/ComeInButton";
+import Title from "../../components/Title/Title";
 
 const HomePage = () => {
   return (
@@ -39,6 +40,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        <Title>Лучшие моменты</Title>
       </main>
     </>
   );

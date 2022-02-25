@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Gotham Pro Bold", sans-serif;
+  font-weight: 700;
+  color: var(--greenColor);
+}
+
+.large {
+  font-size: 102px;
+}
+
+.medium {
+  font-size: 50px;
+}
+
+.small {
+  font-size: 30px;
+}
