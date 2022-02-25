@@ -24,16 +24,17 @@ input[type="radio"].visually-hidden {
 
 :root {
   --greenColor: #007041;
-  --transparentGreenColor: rgba(0, 112, 65, 0.3);
+  --lightGreenColor: #d3e5db;
+  --lightGreenHover: #c1dbc8;
+
   --darkGrey: #3d3935;
-  --transparentDarkGrey: rgba(61, 57, 53, 0.3);
   --darkGreyHover: #504944;
+  --lightGrey: #d8d8d8;
+  --lightGreyHover: #c1c1c1;
   --coldGrey: #212529;
-  --lightGrey: #6c757d;
   --white: #f8f9fa;
   --lightGreen: #e9ecef;
   --loopGradient: 90deg, #007041, #fff, #007041;
-  --iverseLoopGradient: 90deg, #fff, #007041, #fff;
   --linearGradient: -60deg, #007041, #328c66, #fff;
 }
 

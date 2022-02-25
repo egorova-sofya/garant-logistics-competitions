@@ -5,6 +5,11 @@
   height: 200px;
 }
 
+.link {
+  position: relative;
+  text-decoration: none;
+}
+
 .img {
   object-fit: cover;
   border-radius: 28px;
@@ -32,4 +37,12 @@
 
 .imgHover:hover {
   opacity: 0;
+}
+
+.likesCounterWrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  bottom: 4px;
+  left: 8px;
 }
