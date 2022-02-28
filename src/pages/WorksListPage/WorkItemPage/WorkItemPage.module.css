@@ -13,7 +13,7 @@
   color: var(--greenColor);
 }
 
-text {
+.text {
   font-family: "Arial", sans-serif;
   line-height: 22px;
   margin-bottom: 1.5rem;
