@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import s from "./AddWorkBtn.module.css";
 
 const AddWorkBtn = () => {
   return (
     <>
-      <button className={s.button} type="button">
+      <Link to="/addWork" className={s.button}>
         <span className={s.plus}>+</span>
-      </button>
+      </Link>
     </>
   );
 };

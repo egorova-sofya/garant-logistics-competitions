@@ -5,6 +5,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import WorksListPage from "./pages/WorksListPage/WorksListPage";
 import WorkItemPage from "./pages/WorksListPage/WorkItemPage/WorkItemPage";
+import AddWorkPage from "./pages/AddWorkPage/AddWorkPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="congratulations/:id" element={<WorkItemPage />} />
         <Route path="paintings/:id" element={<WorkItemPage />} />
         <Route path="handmade/:id" element={<WorkItemPage />} />
+        <Route path="addWork" element={<AddWorkPage />} />
       </Routes>
     </>
   );

@@ -9,6 +9,8 @@
   background-clip: padding-box;
   padding: 10px;
   transition: all 200ms ease-in;
+  text-decoration: none;
+  text-align: center;
 }
 
 .button::after {

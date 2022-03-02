@@ -8,7 +8,7 @@ const WorksListPage = ({ title }) => {
   return (
     <>
       <h1 className={s.title}>{title}</h1>
-      <dix className={s.workPreviewWrapper}>
+      <div className={s.workPreviewWrapper}>
         <AddWorkBtn />
         <WorkPreview />
         <WorkPreview />
@@ -16,7 +16,7 @@ const WorksListPage = ({ title }) => {
         <WorkPreview />
         <WorkPreview />
         <WorkPreview />
-      </dix>
+      </div>
     </>
   );
 };
