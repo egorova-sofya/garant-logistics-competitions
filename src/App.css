@@ -36,6 +36,10 @@ input[type="radio"].visually-hidden {
   --lightGreen: #e9ecef;
   --loopGradient: 90deg, #007041, #fff, #007041;
   --linearGradient: -60deg, #007041, #328c66, #fff;
+
+  --transparentGreenColor: rgba(0, 112, 65, 0.3);
+  --transparentDarkGrey: rgba(61, 57, 53, 0.3);
+  --iverseLoopGradient: 90deg, #fff, #007041, #fff;
 }
 
 * {

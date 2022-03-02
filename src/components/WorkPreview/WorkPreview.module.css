@@ -1,7 +1,14 @@
+.workWrapper {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 14px 3px rgba(33, 37, 41, 0.22);
+}
+
 .imgWrapper {
   position: relative;
-
-  width: 350px;
+  margin: 0 auto;
+  width: 300px;
   height: 200px;
 }
 
@@ -12,12 +19,12 @@
 
 .img {
   object-fit: cover;
-  border-radius: 28px;
+  border-radius: 10px;
 }
 
 .imgHover {
   transition: opacity 0.3s ease-in-out;
-  border-radius: 28px;
+  border-radius: 10px;
   top: 3px;
   left: 0;
   position: absolute;
@@ -40,9 +47,5 @@
 }
 
 .likesCounterWrapper {
-  position: absolute;
-  width: 100%;
-  z-index: 99;
-  bottom: 4px;
-  left: 8px;
+  margin-top: 1.5rem;
 }

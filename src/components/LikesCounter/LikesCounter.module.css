@@ -5,7 +5,7 @@
   min-width: 50px;
   max-width: 90px;
   height: 35px;
-  background-color: var(--lightGrey);
+  background-color: var(--transparentDarkGrey);
   border-radius: 28px;
   padding: 5px 10px;
   cursor: pointer;
@@ -20,7 +20,7 @@
 }
 
 .likeWrapper:hover {
-  background-color: var(--lightGreyHover);
+  background-color: rgba(61, 57, 53, 0.35);
 }
 
 .amount {
@@ -31,7 +31,7 @@
 }
 
 .active.likeWrapper {
-  background-color: var(--lightGreenColor);
+  background-color: var(--transparentGreenColor);
 }
 
 .active.likeWrapper::before {
@@ -43,7 +43,7 @@
 }
 
 .active.likeWrapper:hover {
-  background-color: var(--lightGreenHover);
+  background-color: rgba(0, 112, 65, 0.35);
 }
 
 .active .amount {
