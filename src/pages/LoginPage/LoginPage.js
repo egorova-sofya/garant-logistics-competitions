@@ -5,7 +5,7 @@ import { withLayout } from "../../hoc/Layout/Layout";
 const LoginPage = () => {
   return (
     <div>
-      <Login title={"Войти"} />
+      <Login title={"Войти"} login={true} />
     </div>
   );
 };

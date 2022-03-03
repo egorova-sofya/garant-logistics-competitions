@@ -1,14 +1,23 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../../Button/Button";
 import s from "./Form.module.css";
 
-const Form = ({ title, handleClick }) => {
+const Form = ({ title, handleClick, login }) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   console.log(title);
   return (
     <>
       <div className={s.wrapper}>
+        {login && (
+          <p className={s.linkText}>
+            Новый пользователь?{" "}
+            <Link className={s.link} to="/registration">
+              Создать учетную запись
+            </Link>
+          </p>
+        )}
         <input
           className={s.input}
           placeholder="E-mail"
