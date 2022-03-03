@@ -1,12 +1,14 @@
 import React from "react";
 import s from "./ComeInButton.module.css";
 import cn from "classnames";
+import { Link } from "react-router-dom";
 
 const ComeInButton = ({ theme = "green" }) => {
   return (
     <>
-      <button
-        className={cn(s.button, {
+      <Link
+        to="/login"
+        className={cn(s.link, {
           [s.greenBtn]: theme === "green",
           [s.whiteBtn]: theme === "white",
         })}
@@ -32,7 +34,7 @@ const ComeInButton = ({ theme = "green" }) => {
           </g>
         </svg>
         <span className={s.btnText}>Войти</span>
-      </button>
+      </Link>
     </>
   );
 };

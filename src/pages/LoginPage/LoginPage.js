@@ -1,7 +1,13 @@
 import React from "react";
+import Login from "../../components/Autorisation/Login/Login";
+import { withLayout } from "../../hoc/Layout/Layout";
 
 const LoginPage = () => {
-  return <div>LoginPage</div>;
+  return (
+    <div>
+      <Login title={"Войти"} />
+    </div>
+  );
 };
 
-export default LoginPage;
+export default withLayout(LoginPage);
