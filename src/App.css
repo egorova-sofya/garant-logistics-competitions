@@ -40,6 +40,11 @@ input[type="radio"].visually-hidden {
   --transparentGreenColor: rgba(0, 112, 65, 0.3);
   --transparentDarkGrey: rgba(61, 57, 53, 0.3);
   --iverseLoopGradient: 90deg, #fff, #007041, #fff;
+
+  /* --breakpointSm: 576px; */
+  /* --breakpoint-md: 768px; */
+  /* --breakpointLg: 992px;
+  --breakpoint-xl: 1200px; */
 }
 
 * {

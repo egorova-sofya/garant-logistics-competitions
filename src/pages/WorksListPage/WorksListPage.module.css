@@ -1,11 +1,3 @@
-.title {
-  text-align: center;
-  font-family: "Gotham Pro Bold", sans-serif;
-  font-size: 50px;
-  line-height: 102px;
-  color: var(--greenColor);
-}
-
 .addWorkWrapper {
   display: flex;
   justify-content: center;
@@ -17,4 +9,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .workPreviewWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .workPreviewWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem 1rem;
+  }
 }

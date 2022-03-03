@@ -33,7 +33,7 @@ const Dropzone = () => {
   const images = files.map((file) => (
     <div key={file.name}>
       <div>
-        <img src={fileImg} style={{ width: "100px" }} alt="preview" />
+        <img src={fileImg} style={{ width: "200px" }} alt="preview" />
         <p className={s.fileName}>{file.name}</p>
       </div>
     </div>

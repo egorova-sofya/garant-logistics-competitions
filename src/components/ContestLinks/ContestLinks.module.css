@@ -3,12 +3,26 @@
   display: flex;
   justify-content: center;
 
-  width: 350px;
+  width: 320px;
   height: 200px;
   cursor: pointer;
   padding: 10px;
   background-color: #fff;
   border-radius: 2px;
+}
+
+@media screen and (max-width: 992px) {
+  .linkWrapper {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .linkWrapper {
+    width: 100%;
+    border-bottom: 1px solid var(--greenColor);
+  }
 }
 
 .link {
@@ -27,6 +41,15 @@
   background-position: 50%;
   top: -70px;
   transition: top 100ms ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .bestCongratulation::after,
+  .bestPainting::after,
+  .bestHandmade::after {
+    background-size: 10%;
+    top: -30px;
+  }
 }
 
 .bestCongratulation::after {
@@ -56,4 +79,18 @@
   font-size: 28px;
   line-height: 33px;
   color: var(--greenColor);
+}
+
+@media screen and (max-width: 992px) {
+  .linkText {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .linkText {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 90px;
+  }
 }

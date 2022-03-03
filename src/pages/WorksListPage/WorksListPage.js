@@ -3,11 +3,14 @@ import WorkPreview from "../../components/WorkPreview/WorkPreview";
 import { withLayout } from "../../hoc/Layout/Layout";
 import AddWorkBtn from "../../components/AddWorkBtn/AddWorkBtn";
 import s from "./WorksListPage.module.css";
+import Title from "../../components/Title/Title";
 
 const WorksListPage = ({ title }) => {
   return (
     <>
-      <h1 className={s.title}>{title}</h1>
+      <Title size={"m"} className={s.title}>
+        {title}
+      </Title>
       <div className={s.addWorkWrapper}>
         <AddWorkBtn />
       </div>

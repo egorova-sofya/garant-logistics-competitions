@@ -4,7 +4,7 @@ import testImg from "../../assets/img/testImg.jpg";
 import LikesCounter from "../LikesCounter/LikesCounter";
 import s from "./WorkPreview.module.css";
 
-const WorkPreview = ({ img, title, link, active = true }) => {
+const WorkPreview = ({ img, title, link, active = true, amount }) => {
   return (
     <>
       <div className={s.workWrapper}>
@@ -15,7 +15,7 @@ const WorkPreview = ({ img, title, link, active = true }) => {
           </div>
         </Link>
         <div className={s.likesCounterWrapper}>
-          <LikesCounter active={active} />
+          <LikesCounter active={active} amount={amount} />
         </div>
       </div>
     </>

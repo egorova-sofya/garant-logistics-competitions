@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import smallLogo from "../../assets/img/mini_logo.svg";
 import ComeInButton from "../ComeInButton/ComeInButton";
 import s from "./Header.module.css";
+import cn from "classnames";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className={s.backround}>
       <Link to="/">
@@ -14,7 +16,15 @@ const Header = () => {
           className={s.logo}
         />
       </Link>
-      <div className={s.headerWrapper}>
+      <button
+        className={s.crossButton}
+        onClick={() => setOpen(!open)}
+        type="button"
+      ></button>
+      <div
+        // className={s.headerWrapper}
+        className={cn(s.headerWrapper, s.mobileMenu)}
+      >
         <nav>
           <ul className={s.linksList}>
             <li className={s.linkItem}>
@@ -28,9 +38,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-      </div>
-      <div className={s.comeInButtonWrapper}>
-        <ComeInButton theme="green" />
+        <div className={s.comeInButtonWrapper}>
+          <ComeInButton theme="green" />
+        </div>
       </div>
     </div>
   );
