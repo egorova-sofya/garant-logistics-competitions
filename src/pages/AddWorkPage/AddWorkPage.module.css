@@ -1,3 +1,26 @@
 .wrapper {
   margin-top: 5rem;
 }
+
+.label {
+  font-size: 25px;
+  font-family: inherit;
+}
+
+.workDescription {
+  width: 100%;
+  resize: none;
+
+  border: 2px solid var(--lightGrey);
+  border-radius: 5px;
+  padding: 20px 25px;
+  font-family: inherit;
+  font-size: 20px;
+  color: var(--coldGrey);
+  margin: 1rem 0 2rem 0;
+}
+
+.workDescription:focus {
+  outline: none;
+  border: 2px solid var(--greenColor);
+}

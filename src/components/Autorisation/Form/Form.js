@@ -10,7 +10,7 @@ const Form = ({ title, handleClick }) => {
     <>
       <div className={s.wrapper}>
         <input
-          className={s.inpit}
+          className={s.input}
           placeholder="E-mail"
           type="email"
           value={email}
@@ -19,7 +19,7 @@ const Form = ({ title, handleClick }) => {
           }}
         />
         <input
-          className={s.inpit}
+          className={s.input}
           placeholder="Пароль"
           type="password"
           value={pass}
