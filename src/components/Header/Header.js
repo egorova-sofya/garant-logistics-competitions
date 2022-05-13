@@ -16,30 +16,33 @@ const Header = () => {
           className={s.logo}
         />
       </Link>
-      <button
-        className={s.crossButton}
-        onClick={() => setOpen(!open)}
-        type="button"
-      ></button>
-      <div
-        // className={s.headerWrapper}
-        className={cn(s.headerWrapper, s.mobileMenu)}
-      >
-        <nav>
-          <ul className={s.linksList}>
-            <li className={s.linkItem}>
-              <Link to="/congratulations">Лучшее поздравление</Link>
-            </li>
-            <li className={s.linkItem}>
-              <Link to="/paintings">Лучший рисунок</Link>
-            </li>
-            <li className={s.linkItem}>
-              <Link to="/handmade">Очумелые ручки</Link>
-            </li>
-          </ul>
-        </nav>
-        <div className={s.comeInButtonWrapper}>
-          <ComeInButton theme="green" />
+      <div className={s.mobileGrid}>
+        <button
+          className={s.crossButton}
+          onClick={() => setOpen(!open)}
+          type="button"
+        ></button>
+        <div
+          className={cn(s.headerWrapper, {
+            [s.mobileMenu]: open === true,
+          })}
+        >
+          <nav>
+            <ul className={s.linksList}>
+              <li className={s.linkItem}>
+                <Link to="/congratulations">Лучшее поздравление</Link>
+              </li>
+              <li className={s.linkItem}>
+                <Link to="/paintings">Лучший рисунок</Link>
+              </li>
+              <li className={s.linkItem}>
+                <Link to="/handmade">Очумелые ручки</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className={s.comeInButtonWrapper}>
+            <ComeInButton theme="green" />
+          </div>
         </div>
       </div>
     </div>
